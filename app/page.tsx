@@ -1,5 +1,9 @@
-import Image from "next/image";
+import HeroSection from "./components/HeroSection";
 
 export default function Home() {
-    return <main className=" text-3xl">أهلا بكم في صفحتي والحمد لله </main>;
+    return (
+        <main className="mx-auto max-w-3xl px-4 md:max-w-5xl">
+            <HeroSection />
+        </main>
+    );
 }

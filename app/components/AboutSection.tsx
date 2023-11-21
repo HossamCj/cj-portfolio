@@ -87,7 +87,7 @@ const AboutSection = () => {
                             {skills.map((item, idx) => (
                                 <p
                                     key={idx}
-                                    className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold hover:cursor-pointer hover:bg-gray-500 hover:text-white transition-all duration-300 ease-in-out">
+                                    className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-teal-700 rounded font-semibold hover:cursor-pointer hover:bg-teal-500 dark:hover:bg-teal-500 hover:text-white dark:hover:text-gray-200 transition-all duration-300 ease-in-out">
                                     {item.skill}
                                 </p>
                             ))}

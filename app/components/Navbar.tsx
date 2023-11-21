@@ -2,12 +2,11 @@
 
 import React, {useState} from "react";
 import {Link} from "react-scroll";
-import {usePathname} from "next/navigation";
 import {IoMdMenu, IoMdClose} from "react-icons/io";
 
 import ThemeProvider from "./ThemeSwitch/index";
 
-const NAV_ITEMS: Array<NavItem> = [
+const NAV_ITEMS = [
     {
         label: "Home",
         page: "home",
@@ -52,7 +51,7 @@ const Navbar = () => {
                                     key={idx}
                                     to={item.page}
                                     className={
-                                        "block lg:inline-block text-neutral-500 dark:text-neutral-100"
+                                        "hover:cursor-pointer hover:text-teal-500 dark:hover:text-teal-300 duration-300 transition-all  block lg:inline-block text-neutral-500 dark:text-neutral-100"
                                     }
                                     activeClass="active"
                                     spy={true}

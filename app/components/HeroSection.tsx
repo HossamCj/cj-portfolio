@@ -40,6 +40,7 @@ const HeroSection = () => {
                         duration={500}>
                         Projects
                     </Link>
+                    {/* <a href={CV}  */}
                 </div>
             </div>
 

@@ -32,7 +32,7 @@ const HeroSection = () => {
                     </p>
                     <Link
                         to="projects"
-                        className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700 hover:cursor-pointer"
+                        className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700 hover:cursor-pointer transition-all duration-300"
                         activeClass="active"
                         spy={true}
                         smooth="true"
@@ -40,7 +40,12 @@ const HeroSection = () => {
                         duration={500}>
                         Projects
                     </Link>
-                    {/* <a href={CV}  */}
+                    <a
+                        href="/CV.pdf"
+                        download
+                        className="text-neutral-100 font-semibold px-6 py-3 ml-4 bg-blue-500 rounded shadow hover:bg-blue-700 transition-all duration-300 hover:cursor-pointer">
+                        Download resume
+                    </a>
                 </div>
             </div>
 

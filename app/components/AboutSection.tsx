@@ -1,5 +1,9 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import {Link} from "react-scroll";
+import {HiArrowDown} from "react-icons/hi";
 
 const skills = [
     {skill: "HTML"},
@@ -95,6 +99,20 @@ const AboutSection = () => {
 
                         {/* <Image src={} alt={}></Image> */}
                     </div>
+                </div>
+                <div className="flex flex-row justify-center mb-20">
+                    <Link
+                        to="projects"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}>
+                        <HiArrowDown
+                            size={35}
+                            className="animate-bounce hover:cursor-pointer"
+                        />
+                    </Link>
                 </div>
             </div>
         </section>
